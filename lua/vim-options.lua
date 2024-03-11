@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+
 vim.cmd("set noshowmode")
 vim.o.scrolloff = 15
 vim.g.loaded_netrw = 1

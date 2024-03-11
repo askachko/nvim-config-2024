@@ -36,6 +36,12 @@ return {
 			lspconfig.emmet_language_server.setup({
 				capabilites = capabilities,
 			})
+			lspconfig.rust_analyzer.setup({
+				capabilites = capabilities,
+				root_dir = lspconfig.util.root_pattern("Cargo.toml", "rust-project.json"),
+        cmd = { "rust-analyzer" },
+			})
+
 			vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>gi", vim.lsp.buf.hover, {})
