@@ -15,5 +15,12 @@ return {
 			":Neotree filesystem focus left<CR>",
 			{ noremap = true, silent = true, desc = "Toggle file tree" }
 		)
+
+		vim.keymap.set(
+			"n",
+			"<leader>cft",
+			":Neotree filesystem close left<CR>",
+			{ noremap = true, silent = true, desc = "close file tree" }
+		)
 	end,
 }
