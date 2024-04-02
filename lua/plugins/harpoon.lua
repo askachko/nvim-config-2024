@@ -10,8 +10,8 @@ return {
 
     local ui = require("harpoon.ui")
     vim.keymap.set("n", "<leader>e", ui.toggle_quick_menu, {})
-    vim.keymap.set("n", "<C-k>", ui.nav_prev, {})
-    vim.keymap.set("n", "<C-j>", ui.nav_next, {})
+    vim.keymap.set("n", "<S-k>", ui.nav_prev, {})
+    vim.keymap.set("n", "<S-j>", ui.nav_next, {})
 
     require("harpoon").setup({
       global_settings = {
