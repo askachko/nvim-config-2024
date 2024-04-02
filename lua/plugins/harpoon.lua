@@ -9,7 +9,7 @@ return {
     vim.keymap.set("n", "<leader>mf", mark.add_file, {})
 
     local ui = require("harpoon.ui")
-    vim.keymap.set("n", "<leader>e", ui.toggle_quick_menu, {})
+    vim.keymap.set("n", "<S-e>", ui.toggle_quick_menu, {})
     vim.keymap.set("n", "<S-k>", ui.nav_prev, {})
     vim.keymap.set("n", "<S-j>", ui.nav_next, {})
 
