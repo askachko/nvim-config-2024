@@ -10,6 +10,7 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
+
 -- cmp max options
 vim.cmd("set pumheight=7")
 vim.cmd("set number")
