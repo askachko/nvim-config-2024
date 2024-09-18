@@ -18,7 +18,8 @@ vim.cmd("set relativenumber")
 vim.opt.fillchars = { eob = " " }
 vim.cmd("set cursorline")
 
-vim.o.background = "dark"
+vim.o.background = "dark" -- or "light" for light mode
+
 vim.opt.pumblend = 20
 
 -- Just some quick save options
