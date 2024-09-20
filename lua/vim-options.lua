@@ -10,7 +10,6 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
-
 -- cmp max options
 vim.cmd("set pumheight=7")
 vim.cmd("set number")
@@ -20,7 +19,7 @@ vim.cmd("set cursorline")
 
 vim.o.background = "dark" -- or "light" for light mode
 
-vim.opt.pumblend = 20
+vim.opt.pumblend = 10
 
 -- Just some quick save options
 vim.keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, silent = true, desc = "Save" })
