@@ -16,6 +16,10 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.opt.fillchars = { eob = " " }
 
+-- Copy to system clipboard with Command + C
+vim.api.nvim_set_keymap('v', '<S-c>', '"*y', { noremap = true, silent = true })  -- Visual mode
+vim.api.nvim_set_keymap('n', '<S-c>', '"*yy', { noremap = true, silent = true }) -- Normal mode
+
 vim.opt.cursorline = false
 vim.o.showcmd = false
 
