@@ -15,11 +15,11 @@ vim.cmd("set pumheight=7")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.opt.fillchars = { eob = " " }
-vim.cmd("set cursorline")
+
+vim.opt.cursorline = false
+vim.o.showcmd = false
 
 vim.o.background = "dark" -- or "light" for light mode
-
-vim.opt.pumblend = 10
 
 -- Just some quick save options
 vim.keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, silent = true, desc = "Save" })

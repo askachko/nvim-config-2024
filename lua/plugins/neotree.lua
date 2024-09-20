@@ -12,7 +12,15 @@ return {
 			window = {
 				width = 25,
 			},
-		})
-		vim.keymap.set("n", "<leader>e", ":Neotree filesystem toggle left<CR>", { silent = true })
+      filesystem = {
+          filtered_items = {
+            hide_by_name = {
+            ".git",
+            },
+            hide_dotfiles = false,
+            hide_gitignored = false,
+  }}
+    })
+		vim.keymap.set("n", "<leader>e", ":Neotree filesystem toggle float<CR>", { silent = true })
 	end,
 }
