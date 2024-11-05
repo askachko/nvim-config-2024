@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+
 
 vim.opt.termguicolors = true
 vim.cmd("set expandtab")
@@ -37,3 +37,4 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- Disable swap files
 vim.o.swapfile = false
+
