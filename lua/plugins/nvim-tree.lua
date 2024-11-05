@@ -9,7 +9,8 @@ return {
     local tree = require("nvim-tree")
     tree.setup({
       view = {
-        width = 25,
+        width = 55,
+       side = "right",
       },
       renderer = {
         icons = {

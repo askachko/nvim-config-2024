@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "tsserver", "cssls", "tailwindcss" },
+				ensure_installed = { "lua_ls", "ts_ls", "cssls", "tailwindcss", "rust_analyzer", "clangd" },
 			})
 		end,
 	},
@@ -23,7 +23,7 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilites = capabilities,
 			})
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilites = capabilities,
 			})
 			lspconfig.cssls.setup({
@@ -35,10 +35,13 @@ return {
 			lspconfig.emmet_language_server.setup({
 				capabilites = capabilities,
 			})
+			lspconfig.clangd.setup({
+				capabilites = capabilities,
+			})
 			lspconfig.rust_analyzer.setup({
 				capabilites = capabilities,
 				root_dir = lspconfig.util.root_pattern("Cargo.toml", "rust-project.json"),
-        cmd = { "rust-analyzer" },
+				cmd = { "rust-analyzer" },
 			})
 
 			vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
